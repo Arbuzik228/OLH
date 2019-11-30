@@ -1,5 +1,7 @@
 package com.company;
 
+import peshhhhPeshhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh.Hoop;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -60,5 +62,8 @@ public class Main {
             mInfoTextView.append("\n");
         }
         System.out.println(mInfoTextView);
+        GDZ gdz = new GDZ();
+        Hoop hoop1 = new Hoop();
+        hoop1.food(13);
     }
 }

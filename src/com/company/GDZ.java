@@ -1,7 +1,7 @@
 package com.company;
 
-public class GDZ {
-    public String lol (int kek){
+ class GDZ {
+    private String lol (int kek){
         int lolkekcheburek =1;
 
         StringBuffer mInfoTextView =new StringBuffer();
