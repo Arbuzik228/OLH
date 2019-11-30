@@ -6,13 +6,15 @@ public class GDZ {
 
         StringBuffer mInfoTextView =new StringBuffer();
 
-        for ( int i = 1; i <= 10; i++) {
+        for ( int i = 1; i <= kek; i++) {
             for ( int j = 0; j < i ; j++) {
-                System.out.println("lolkekcheburek =" + lolkekcheburek);
-                if (lolkekcheburek==kek+1){
+                if (lolkekcheburek == kek + 1) {
                     break;
                 }
                 mInfoTextView.append(" " + lolkekcheburek++);
+            }
+            if (lolkekcheburek==kek+1) {
+                break;
             }
             mInfoTextView.append("\n");
         }
