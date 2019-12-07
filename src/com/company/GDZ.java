@@ -1,28 +1,47 @@
 package com.company;
 
  class GDZ {
-    private String lol (int kek){
-        int lolkekcheburek =1;
 
-        StringBuffer mInfoTextView =new StringBuffer();
+     public static void main (String args[]) {
+         GDZ hoop = new GDZ ();
+         hoop.god("              ","_____________");
+         System.out.println(args);
+     }
+     public static void god (String o,String l) {
+         StringBuffer good = new StringBuffer();
+         for (int r = 1; r <= 1; r++) {
+             good.append(o);
+             good.append(l);
+             good.append("\n");
 
-        for ( int i = 1; i <= kek; i++) {
-            for ( int j = 0; j < i ; j++) {
-                if (lolkekcheburek == kek + 1) {
-                    break;
-                }
-                mInfoTextView.append(" " + lolkekcheburek++);
-            }
-            if (lolkekcheburek==kek+1) {
-                break;
-            }
-            mInfoTextView.append("\n");
-        }
-       return mInfoTextView.toString();
-    }
-    public static void main(String args[]){
-        GDZ youTube = new GDZ();
-        String lolker=youTube.lol(21);
-        System.out.println(lolker);
-    }
-}
+//             good.append("              ");
+//             good.append("_____________");
+//             good.append("\n");
+//             good.append("            ");
+//             good.append("/               \\");
+//             good.append("\n");
+//             good.append("           ");
+//             good.append("/                 \\");
+//             good.append("\n");
+//             good.append("          ");
+//             good.append("|                   |");
+//             good.append("\n");
+//             good.append("          ");
+//             good.append("|                   |");
+//             good.append("\n");
+//             good.append("          ");
+//             good.append("|                   |");
+//             good.append("\n");
+//             good.append("          ");
+//             good.append("|                   |");
+//             good.append("\n");
+//             good.append("           ");
+//             good.append("\\                 /");
+//             good.append("\n");
+//             good.append("            ");
+//             good.append("\\_______________/");
+
+         }
+         System.out.println(good);
+     }
+ }
