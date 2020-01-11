@@ -9,7 +9,6 @@ import java.util.List;
 public class Main {
 
     public static void main(String[] args) {
-	// write your code here
         boolean as=true;
         boolean boo=true;
         System.out.println(""+ !(as||boo) + (!as&&!boo) );
@@ -64,6 +63,5 @@ public class Main {
         System.out.println(mInfoTextView);
         GDZ gdz = new GDZ();
         Hoop hoop1 = new Hoop();
-        hoop1.food(13);
     }
 }
