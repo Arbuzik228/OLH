@@ -2,6 +2,7 @@ package com.company;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.List;
 
 public class VopEroinoVopVop {
@@ -98,16 +99,19 @@ public class VopEroinoVopVop {
         arrToList(selectionSort(kakazya)).forEach(shavuxa -> System.out.println(" sorted array " + shavuxa));
         arrToList(noob(kakazya)).forEach(shavuxa -> System.out.println(" sorted array nyu " + shavuxa));
         arrToList(bubbleSort(kakazya)).forEach(shavuxa -> System.out.println(" sorted array agar.io " + shavuxa));
+        arrToList(lootSort(kakazya)).forEach(shavuxa -> System.out.println(" agar.io " + shavuxa));
+        Arrays.sort(kakazya);
+        arrToList(kakazya).forEach(shavuxa -> System.out.println(" full server " + shavuxa));
+        arrToList(javaKakava()).forEach(shavuxa -> System.out.println(" full servuk " + shavuxa));
     }
 
     public static List<Integer> arrToList(int[] arr) {
         List<Integer> intList = new ArrayList<Integer>(arr.length);
-        for (int io : selectionSort(arr))
-        {
+        for (int io : arr) {
             intList.add(io);
         }
         return intList;
-}
+    }
 
     public static int[] selectionSort(int[] arr) {
         for (int i = 0; i < arr.length; i++) {
@@ -158,5 +162,41 @@ public class VopEroinoVopVop {
             }
         }
         return arr;
+    }
+
+    public static int[] lootSort(int[] arr) {
+        for (int f = arr.length - 1; f > 0; f--) {
+            for (int l = 0; l < f; l++) {
+                if (arr[l] < arr[l + 1]) {
+                    int tmp = arr[l];
+                    arr[l] = arr[l + 1];
+                    arr[l + 1] = tmp;
+                }
+            }
+        }
+        return arr;
+    }
+
+    public static int[] javaKakava() {
+        int arr[] = lolipop();
+        Integer[] nn = ppl(arr);
+        Arrays.sort(nn, Collections.reverseOrder());
+        for (int y = 0; y < nn.length; y++) {
+            arr[y] = nn[y];
+        }
+        return arr;
+    }
+
+    public static int[] lolipop() {
+        int arr[] = new int[10];
+        for (int i = 0; i < arr.length; i++) {
+            arr[i] = (int) (Math.random() * 100);
+            System.out.println("job it's my life" + arr[i]);
+        }
+        return arr;
+    }
+
+    public static Integer[] ppl(int[] pll) {
+        return Arrays.stream(pll).boxed().toArray(Integer[]::new);
     }
 }
